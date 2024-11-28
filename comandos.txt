@@ -2,3 +2,6 @@ cat consumos.txt | grep -B 12 "55" > file1
 cat file1 | grep -w -A 5 "55" > d
 cat file1 | grep -w -A 5 "100" > a
 cat file1 | grep -w -A 4 "sem1" > s
+cat consumos.txt | grep -w "TOTAL" >> file2
+cat consumos.txt | grep -w  "L" >> file2
+cat totales.txt | grep -w -A 4 "sem1" >> file2
